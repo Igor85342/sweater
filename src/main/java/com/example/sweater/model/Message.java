@@ -7,13 +7,10 @@ import javax.persistence.Id;
 
 @Entity
 public class Message {
-
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
-
     private String text;
-
     private String tag;
 
     public Message(){
@@ -47,5 +44,4 @@ public class Message {
     public void setTag(String tag) {
         this.tag = tag;
     }
-
 }
